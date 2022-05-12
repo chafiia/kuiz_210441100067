@@ -1,0 +1,88 @@
+*{
+ font-family: sans-serif;
+}
+
+header {
+ height: 70px;
+ border: 1px ;
+}
+
+header h1{
+ border:1px ;
+ display: inline-block;
+ float: left; /*penempatan*/
+ padding: 15px 24px;
+ text-transform: uppercase;/*ngubah tulisan jadi besar semua*/
+}
+header h1 a{
+ transition: .3s; /*transisi waktu untuk berubah nb: ga pake gapapa*/
+}
+header h1 a:hover{ /*memberikan reaksi jika kursor di dekatkan akan berubah warna*/
+ color: LightCoral;
+}
+header ul{
+ border: 1px ;
+ float: right; /*penempatan*/
+}
+header ul li{
+ border: 1px ;
+ padding:24px;
+ display: inline-block; /*ngubah tampilannya jadi kesamping*/
+}
+
+header ul li a:hover{
+ color: LightCoral;
+}
+
+a {
+ text-decoration: none;/*menghapus garis bawah*/
+}
+
+.container{
+ width: 90%;
+ margin: 0 auto;
+ border:1px;
+}
+.artikel{
+ background-color: cornsilk;
+}
+.artikel1 img{
+ width: 200px;
+ border-radius: 10px;
+ box-shadow: 0 3px 5px #ddd;
+}
+section{
+ padding:50px 0;
+}
+section h3{
+ padding-bottom: 20px;
+ text-align: center;
+ margin: 20px;
+ position: relative;
+}
+section h3::before{ /*buat garis bawah*/
+ content: '';
+ display: block;
+ position:absolute;
+ bottom: 0;
+ width: 120px;
+ height:1px;
+ background-color:rgb(168, 27, 27);
+ left: 45%;
+}
+section h3::after{ /*buat garis bawah*/
+ content: '';
+ display: block;
+ position:absolute;
+ bottom: 0;
+ width: 120px;
+ height:4px;
+ background-color:rgb(168, 27, 27);
+ left: 45%;
+}
+#about p {
+ text-align: justify;
+ text-indent: 30px;
+ line-height:25px;
+ margin-top: 15px;
+}
